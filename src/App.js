@@ -19,7 +19,7 @@ function App() {
   <input type="text" id="fname" name="fname"/><br/>
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"/><br/>
-  <input type="submit" value="Submit"></input>
+  <button >ADD</button>
   </div>;
 }
 
