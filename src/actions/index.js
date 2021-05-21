@@ -6,3 +6,5 @@ const allReducers = combineReducers({
     Create : addTask,
     Counter : IncrementDecrement
 });
+
+export default allReducers;

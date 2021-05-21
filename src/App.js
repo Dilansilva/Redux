@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TodoList from "../src/components/TodoList";
 
 import {useSelector,useDispatch} from 'react-redux';
@@ -7,6 +7,9 @@ import {Increment,Decrement} from './actions/IncrementDecrement';
 
 
 function App() {
+  const [fName,SetFname] = useState('');//state for first name
+  const [lName,SetLname] = useState('');//state for last name
+
   const counter = useSelector(state => state);
   const dispatch = useDispatch();
   return <div>
