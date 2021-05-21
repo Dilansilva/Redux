@@ -3,18 +3,21 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-import allReducers from "./reducers";
+
 import { createStore } from "redux";
+import IncrementDecrement from "./reducers/IncrementDecrement";
+
 import {Provider} from 'react-redux';
 
-const myStore = createStore(
-  allReducers,
+const store = createStore(
+  IncrementDecrement,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+
 ReactDOM.render(
   <React.StrictMode>
-  <Provider store={myStore}>
+  <Provider store={store}>
   <App />
   </Provider>
   </React.StrictMode>,

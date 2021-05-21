@@ -1,20 +1,19 @@
-import React from 'react';
+import React from "react";
 import TodoList from "../src/components/TodoList";
 
 import {useSelector,useDispatch} from 'react-redux';
-import {increment,decrement} from './actions'
+
+import {Increment,Decrement} from './actions/IncrementDecrement';
+
 
 function App() {
-  const counter = useSelector(state => state.counter)
+  const counter = useSelector(state => state);
   const dispatch = useDispatch();
-  return (
-    <div>
-      <h1>Counter : {counter}</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
-
-    </div>
-  );
+  return <div>
+    <h1>Number : {counter}</h1>
+    <button onClick={() => dispatch(Increment())}>+</button>
+    <button onClick={() => dispatch(Decrement())}>-</button>
+  </div>;
 }
 
 export default App;
