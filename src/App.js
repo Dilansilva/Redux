@@ -13,6 +13,13 @@ function App() {
     <h1>Number : {counter}</h1>
     <button onClick={() => dispatch(Increment())}>+</button>
     <button onClick={() => dispatch(Decrement())}>-</button>
+
+    <br/>
+    <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname"/><br/>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"/><br/>
+  <input type="submit" value="Submit"></input>
   </div>;
 }
 
