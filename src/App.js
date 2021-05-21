@@ -19,9 +19,9 @@ function App() {
 
     <br/>
     <label for="fname">First Name:</label>
-  <input type="text" id="fname" name="fname"/><br/>
+  <input type="text" id="fname" name="fname" onChange={e => SetFname(e.target.value)}/><br/>
   <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"/><br/>
+  <input type="text" id="lname" name="lname" onChange={e => SetLname(e.target.value)}/><br/>
   <button >ADD</button>
   </div>;
 }
