@@ -3,14 +3,12 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-
 import { createStore } from "redux";
-import IncrementDecrement from "./reducers/IncrementDecrement";
 
-import {Provider} from 'react-redux';
+import allReducers from "./reducers";
 
 const store = createStore(
-  IncrementDecrement,
+  allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
@@ -18,7 +16,7 @@ const store = createStore(
 ReactDOM.render(
   <React.StrictMode>
   <Provider store={store}>
-  <App />
+    <App />
   </Provider>
   </React.StrictMode>,
   document.getElementById("root")
