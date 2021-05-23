@@ -17,10 +17,10 @@ function App() {
     SetFname('');
   }
 
-  const counter = useSelector(state => state.Counter);
+  const counter = useSelector(state => state.counter);
   const dispatch = useDispatch();
 
-  const create = useSelector(state => state);
+  const create = useSelector(state => state.create);
 
   const Create = useState();
   return <div>

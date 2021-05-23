@@ -3,7 +3,7 @@ const initialState = {
     allTask: []
 };
 
-const addTask = (state = 'ujbjb',action) => {
+const addTask = (state = '',action) => {
     switch (action.type) {
         case "ADD_TASK":{
             const {id,task} = action.payload;
